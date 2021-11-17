@@ -160,7 +160,7 @@
 			"response": []
 		},
 		{
-			"name": "AUTHORS",
+			"name": "ALL AUTHORS",
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {
 					"accept": true
@@ -194,6 +194,270 @@
 						"api",
 						"v1",
 						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ONE AUTHOR",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNDRmODk0NjI4ODE4MjJlNjExODcwZmI2N2QwYjA4Mjk0NWY2YzE1YTZjNTM5MmFjZWJhMjRlYzExMWE2NGYwZTczNTY1MzNjY2RkNTQ1ZWUiLCJpYXQiOjE2MzcwNzA1MDEuMDI0MjYyLCJuYmYiOjE2MzcwNzA1MDEuMDI0MjY2LCJleHAiOjE2Njg2MDY1MDAuOTkzNDk1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.hW84N7MxKValymMbV5WO1hfP-gL0C7-evMYWHvaG2lZRVbGczpNIWpH5rYiyZmTLSA7xmjLH6mCPYA8znXNC1YdjJQe8sXP068Zb5PaQNnErPgHLWx1HGsMryrP3MQk5TLXSwG942N65ytc63RU6supJfjQkKwMTsyvRGu7esKFRvoYQ0_mpHJdvmfVz5Noub7eRtb01jprJyuhZUCC8TPtjvJB4BaBPSAmHV8rmsElo4Nymies1qHBzqm9qRrl8-8TkajPz1qbA-H0L91rXJaAy_pCE1ogidkz_m0a2Ufqq29INGBJixoh8WwutslyDMfWkhL7Ib6KrvMlzJ3IHXw-56hwuhS1pjdhBurQxtrbQdmM392h_AN-kOqYL1ZQFeUCdf_1eC8ID9Q_2svPmdk0j270iTvTtWOYMvhfO_PByxrBql82UmbctjkvoxMBJ8nU5gheoFBtDwBbFSCR1Ba2LGTxzPe3JIXJndskK2X6OoXCi198XMKGX2IsMvkDI2sPV8CxQqmDzpPDSqm5X0Fzw45qBI-3Y2UEwJMpZrL8aJio0FLra0x1mKXyUuYUc1Guatw2CieJCkN8KzVigUXS5XSChAseVfIYC4JxiUdsjxKXV5ZYMf6i6RDmmsOGffETgkX6fokh1R23JQgUAUYSVpjfdhmhn3otE91_fxrU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/authors/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"authors",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "STORE AUTHOR",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNDRmODk0NjI4ODE4MjJlNjExODcwZmI2N2QwYjA4Mjk0NWY2YzE1YTZjNTM5MmFjZWJhMjRlYzExMWE2NGYwZTczNTY1MzNjY2RkNTQ1ZWUiLCJpYXQiOjE2MzcwNzA1MDEuMDI0MjYyLCJuYmYiOjE2MzcwNzA1MDEuMDI0MjY2LCJleHAiOjE2Njg2MDY1MDAuOTkzNDk1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.hW84N7MxKValymMbV5WO1hfP-gL0C7-evMYWHvaG2lZRVbGczpNIWpH5rYiyZmTLSA7xmjLH6mCPYA8znXNC1YdjJQe8sXP068Zb5PaQNnErPgHLWx1HGsMryrP3MQk5TLXSwG942N65ytc63RU6supJfjQkKwMTsyvRGu7esKFRvoYQ0_mpHJdvmfVz5Noub7eRtb01jprJyuhZUCC8TPtjvJB4BaBPSAmHV8rmsElo4Nymies1qHBzqm9qRrl8-8TkajPz1qbA-H0L91rXJaAy_pCE1ogidkz_m0a2Ufqq29INGBJixoh8WwutslyDMfWkhL7Ib6KrvMlzJ3IHXw-56hwuhS1pjdhBurQxtrbQdmM392h_AN-kOqYL1ZQFeUCdf_1eC8ID9Q_2svPmdk0j270iTvTtWOYMvhfO_PByxrBql82UmbctjkvoxMBJ8nU5gheoFBtDwBbFSCR1Ba2LGTxzPe3JIXJndskK2X6OoXCi198XMKGX2IsMvkDI2sPV8CxQqmDzpPDSqm5X0Fzw45qBI-3Y2UEwJMpZrL8aJio0FLra0x1mKXyUuYUc1Guatw2CieJCkN8KzVigUXS5XSChAseVfIYC4JxiUdsjxKXV5ZYMf6i6RDmmsOGffETgkX6fokh1R23JQgUAUYSVpjfdhmhn3otE91_fxrU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Gino Strada",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/authors",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE AUTHOR",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNDRmODk0NjI4ODE4MjJlNjExODcwZmI2N2QwYjA4Mjk0NWY2YzE1YTZjNTM5MmFjZWJhMjRlYzExMWE2NGYwZTczNTY1MzNjY2RkNTQ1ZWUiLCJpYXQiOjE2MzcwNzA1MDEuMDI0MjYyLCJuYmYiOjE2MzcwNzA1MDEuMDI0MjY2LCJleHAiOjE2Njg2MDY1MDAuOTkzNDk1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.hW84N7MxKValymMbV5WO1hfP-gL0C7-evMYWHvaG2lZRVbGczpNIWpH5rYiyZmTLSA7xmjLH6mCPYA8znXNC1YdjJQe8sXP068Zb5PaQNnErPgHLWx1HGsMryrP3MQk5TLXSwG942N65ytc63RU6supJfjQkKwMTsyvRGu7esKFRvoYQ0_mpHJdvmfVz5Noub7eRtb01jprJyuhZUCC8TPtjvJB4BaBPSAmHV8rmsElo4Nymies1qHBzqm9qRrl8-8TkajPz1qbA-H0L91rXJaAy_pCE1ogidkz_m0a2Ufqq29INGBJixoh8WwutslyDMfWkhL7Ib6KrvMlzJ3IHXw-56hwuhS1pjdhBurQxtrbQdmM392h_AN-kOqYL1ZQFeUCdf_1eC8ID9Q_2svPmdk0j270iTvTtWOYMvhfO_PByxrBql82UmbctjkvoxMBJ8nU5gheoFBtDwBbFSCR1Ba2LGTxzPe3JIXJndskK2X6OoXCi198XMKGX2IsMvkDI2sPV8CxQqmDzpPDSqm5X0Fzw45qBI-3Y2UEwJMpZrL8aJio0FLra0x1mKXyUuYUc1Guatw2CieJCkN8KzVigUXS5XSChAseVfIYC4JxiUdsjxKXV5ZYMf6i6RDmmsOGffETgkX6fokh1R23JQgUAUYSVpjfdhmhn3otE91_fxrU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Alexandre Dumas",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/authors/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"authors",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE AUTHOR",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNDRmODk0NjI4ODE4MjJlNjExODcwZmI2N2QwYjA4Mjk0NWY2YzE1YTZjNTM5MmFjZWJhMjRlYzExMWE2NGYwZTczNTY1MzNjY2RkNTQ1ZWUiLCJpYXQiOjE2MzcwNzA1MDEuMDI0MjYyLCJuYmYiOjE2MzcwNzA1MDEuMDI0MjY2LCJleHAiOjE2Njg2MDY1MDAuOTkzNDk1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.hW84N7MxKValymMbV5WO1hfP-gL0C7-evMYWHvaG2lZRVbGczpNIWpH5rYiyZmTLSA7xmjLH6mCPYA8znXNC1YdjJQe8sXP068Zb5PaQNnErPgHLWx1HGsMryrP3MQk5TLXSwG942N65ytc63RU6supJfjQkKwMTsyvRGu7esKFRvoYQ0_mpHJdvmfVz5Noub7eRtb01jprJyuhZUCC8TPtjvJB4BaBPSAmHV8rmsElo4Nymies1qHBzqm9qRrl8-8TkajPz1qbA-H0L91rXJaAy_pCE1ogidkz_m0a2Ufqq29INGBJixoh8WwutslyDMfWkhL7Ib6KrvMlzJ3IHXw-56hwuhS1pjdhBurQxtrbQdmM392h_AN-kOqYL1ZQFeUCdf_1eC8ID9Q_2svPmdk0j270iTvTtWOYMvhfO_PByxrBql82UmbctjkvoxMBJ8nU5gheoFBtDwBbFSCR1Ba2LGTxzPe3JIXJndskK2X6OoXCi198XMKGX2IsMvkDI2sPV8CxQqmDzpPDSqm5X0Fzw45qBI-3Y2UEwJMpZrL8aJio0FLra0x1mKXyUuYUc1Guatw2CieJCkN8KzVigUXS5XSChAseVfIYC4JxiUdsjxKXV5ZYMf6i6RDmmsOGffETgkX6fokh1R23JQgUAUYSVpjfdhmhn3otE91_fxrU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/authors/11",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"authors",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ALL BOOKS",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNDRmODk0NjI4ODE4MjJlNjExODcwZmI2N2QwYjA4Mjk0NWY2YzE1YTZjNTM5MmFjZWJhMjRlYzExMWE2NGYwZTczNTY1MzNjY2RkNTQ1ZWUiLCJpYXQiOjE2MzcwNzA1MDEuMDI0MjYyLCJuYmYiOjE2MzcwNzA1MDEuMDI0MjY2LCJleHAiOjE2Njg2MDY1MDAuOTkzNDk1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.hW84N7MxKValymMbV5WO1hfP-gL0C7-evMYWHvaG2lZRVbGczpNIWpH5rYiyZmTLSA7xmjLH6mCPYA8znXNC1YdjJQe8sXP068Zb5PaQNnErPgHLWx1HGsMryrP3MQk5TLXSwG942N65ytc63RU6supJfjQkKwMTsyvRGu7esKFRvoYQ0_mpHJdvmfVz5Noub7eRtb01jprJyuhZUCC8TPtjvJB4BaBPSAmHV8rmsElo4Nymies1qHBzqm9qRrl8-8TkajPz1qbA-H0L91rXJaAy_pCE1ogidkz_m0a2Ufqq29INGBJixoh8WwutslyDMfWkhL7Ib6KrvMlzJ3IHXw-56hwuhS1pjdhBurQxtrbQdmM392h_AN-kOqYL1ZQFeUCdf_1eC8ID9Q_2svPmdk0j270iTvTtWOYMvhfO_PByxrBql82UmbctjkvoxMBJ8nU5gheoFBtDwBbFSCR1Ba2LGTxzPe3JIXJndskK2X6OoXCi198XMKGX2IsMvkDI2sPV8CxQqmDzpPDSqm5X0Fzw45qBI-3Y2UEwJMpZrL8aJio0FLra0x1mKXyUuYUc1Guatw2CieJCkN8KzVigUXS5XSChAseVfIYC4JxiUdsjxKXV5ZYMf6i6RDmmsOGffETgkX6fokh1R23JQgUAUYSVpjfdhmhn3otE91_fxrU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ONE BOOK",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNDRmODk0NjI4ODE4MjJlNjExODcwZmI2N2QwYjA4Mjk0NWY2YzE1YTZjNTM5MmFjZWJhMjRlYzExMWE2NGYwZTczNTY1MzNjY2RkNTQ1ZWUiLCJpYXQiOjE2MzcwNzA1MDEuMDI0MjYyLCJuYmYiOjE2MzcwNzA1MDEuMDI0MjY2LCJleHAiOjE2Njg2MDY1MDAuOTkzNDk1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.hW84N7MxKValymMbV5WO1hfP-gL0C7-evMYWHvaG2lZRVbGczpNIWpH5rYiyZmTLSA7xmjLH6mCPYA8znXNC1YdjJQe8sXP068Zb5PaQNnErPgHLWx1HGsMryrP3MQk5TLXSwG942N65ytc63RU6supJfjQkKwMTsyvRGu7esKFRvoYQ0_mpHJdvmfVz5Noub7eRtb01jprJyuhZUCC8TPtjvJB4BaBPSAmHV8rmsElo4Nymies1qHBzqm9qRrl8-8TkajPz1qbA-H0L91rXJaAy_pCE1ogidkz_m0a2Ufqq29INGBJixoh8WwutslyDMfWkhL7Ib6KrvMlzJ3IHXw-56hwuhS1pjdhBurQxtrbQdmM392h_AN-kOqYL1ZQFeUCdf_1eC8ID9Q_2svPmdk0j270iTvTtWOYMvhfO_PByxrBql82UmbctjkvoxMBJ8nU5gheoFBtDwBbFSCR1Ba2LGTxzPe3JIXJndskK2X6OoXCi198XMKGX2IsMvkDI2sPV8CxQqmDzpPDSqm5X0Fzw45qBI-3Y2UEwJMpZrL8aJio0FLra0x1mKXyUuYUc1Guatw2CieJCkN8KzVigUXS5XSChAseVfIYC4JxiUdsjxKXV5ZYMf6i6RDmmsOGffETgkX6fokh1R23JQgUAUYSVpjfdhmhn3otE91_fxrU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/books/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"2"
 					]
 				}
 			},

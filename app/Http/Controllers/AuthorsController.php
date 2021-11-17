@@ -23,10 +23,11 @@ class AuthorsController extends Controller
 
     public function store(AuthorsRequest $request)
     {
-        $faker = \Faker\Factory::create(1);
+//        $faker = \Faker\Factory::create(1);
 
+        // name => passato da Postman
         $author = Author::create([
-            'name' => $faker->name
+            'name' => $request->name
         ]);
 
         return new AuthorsResource($author);
@@ -58,6 +59,7 @@ class AuthorsController extends Controller
     public function destroy(Author $author)
     {
         $author->delete();
+
         return response(null, 204);
     }
 }

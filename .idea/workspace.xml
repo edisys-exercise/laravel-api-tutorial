@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06e7ecd6-8370-42f6-a79f-0ff0803d383c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/exercise-laravel-api-tutorial.postman_collection.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel-sanctum-api.postman_collection.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bookstore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthorsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthorsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BooksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BooksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/BooksResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/BooksResource.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +22,13 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/edisys-exercise/laravel-api-tutorial" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -193,7 +195,8 @@
       <option name="presentableId" value="Default" />
       <updated>1628166438014</updated>
       <workItem from="1628166439178" duration="398000" />
-      <workItem from="1637063351305" duration="6099000" />
+      <workItem from="1637063351305" duration="6473000" />
+      <workItem from="1637134733225" duration="4904000" />
     </task>
     <servers />
   </component>

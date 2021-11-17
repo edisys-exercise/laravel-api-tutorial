@@ -12,7 +12,7 @@ class Author extends Model
     protected $fillable = ['name'];
 
     protected $hidden = [
-        'laravel_through_key',
+        'laravel_through_key',  // è l'id che ha nella pivot table
         'created_at',
         'updated_at'
     ];

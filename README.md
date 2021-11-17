@@ -1,4 +1,8 @@
-## Laravel API Tutorial
+## Laravel API Tutorial (using Laravel Passport)
+
+### TODO:
+- fare la relazione inversa authors-books
+- completare le API nella collecton di Postman
 
 The following documentation is based on my  [Laravel 8 API Tutorial for Beginners]( https://www.youtube.com/watch?v=xvqPEEpRBJ4) where I’ll show you how to work with API’s in Laravel. <br>
 •	YouTube: https://www.youtube.com/watch?v=xvqPEEpRBJ4 <br>
